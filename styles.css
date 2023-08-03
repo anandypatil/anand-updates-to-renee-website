@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+* {
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif */
+}
+
+.side-bar {
+  width: 150px;
+  height: 100vh;
+  position: fixed;
+  /* display: flex; */
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 27px;
+}
+
+nav .ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+/* nav li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+} */
+
+nav li a:hover {
+  color:  #bdefbc;
+}
+.about {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+.mystory {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+.projects {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+.resources {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+.contact {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+
+.about:hover {
+  color:  #bdefbc;
+}
+
+.mystory:hover {
+  color:  #aeecad;
+}
+
+.projects:hover {
+  color:  #88ef86;
+}
+.resources:hover {
+  color:  #71c86f;
+}
+.contact:hover {
+  color:  #57b556;
+}
+
+.main-content {
+  margin-left: 160px;
+}
+
+section {
+  background-color: #bdefbc;
+  height: 100vh;
+  margin:0;
+  /* padding: 25px; */
+  padding:2.5rem 4rem;
+}
+/* every other (2n) */
+section:nth-of-type(2) {
+  background-color: #aeecad;
+}
+
+section:nth-of-type(3) {
+  background-color: #88ef86;
+}
+
+section:nth-of-type(4) {
+  background-color: #71c86f;
+}
+
+/* create different sizes sections like this */
+section:last-of-type {
+  height: 60vh;
+  background-color: #57b556;
+
+}
+
+h1 {
+  color: #444;
+  font-weight: 600;
+}
+
+.active {
+  color:  #62be61; 
+  font-weight: 600;
+}
+
+p{
+  font-size: 30px;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.boxes {
+  display: flex;
+}
+
+.abouttext {
+  text-align: center;
+
+}
+
+.pic {
+  margin-left: 20px;
+  /* min-width: 250px;
+  max-height: 700px;
+  height: auto; */
+}
+
+
+/* tabs */
+
+/**
+ * Tabs
+ */
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; 
+  /* // make sure it wraps */
+}
+.tabs label {
+	order: 1; 
+  /* // Put the labels first */
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #bdefbc;
+  font-weight: bold;
+  transition:  ease 0.2s;
+}
+.tabs .tab {
+  order: 99; 
+  /* // Put the tabs last */
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  /* align-content: center;
+  align-items: center; */
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+ .tabcontent {
+  font-size: 18px;
+ }
+/**
+ * Generic Styling
+*/
+/* body {
+  background: #eee;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+} */
+
+.pictures {
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin-left: 30px; */
+}
+
+/* resrources poage */
+.res {
+  background-color: #71c86f;
+
+}
+
+.back-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #bdefbc;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underlining from the link */
+
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+}
+
+#mystory a{
+  color: rgb(7, 156, 4);
+}
+#mystory a:hover{
+  color: rgb(255, 255, 255);
+}
+
+/* contact */
+.contactsss {
+  color: white;
+  font-size: 18px;
+}
+
+/* resources page */
+.res p {
+  text-align: center;
+  margin: 50px 50px;
+  font-size: 30px;
+}
+
+.header1{
+  margin: 20px 50px;
+  color:#274c26
+}
+
+.header2 {
+  font-size: 23px;
+  margin: 10px 50px;
+  color: white;
+}
+.res a:hover{
+  color:#274c26;
+}
+
+.content {
+  margin: 10px 50px;
+  font-size: 20px;
+}
+
+.tab a{
+  color:#274c26;
+}
+.tab a:hover{
+  color:#1ddc17;
+}
